@@ -109,7 +109,7 @@ func TestPrometheusMeterGetUpdated(t *testing.T) {
 	gm.Mark(5)
 
 	// Ensure the prom registry has the most recent information
-	pClient.UpdatePrometheusMetricsOnce()
+	//pClient.UpdatePrometheusMetricsOnce()
 	metrics, _ := prometheusRegistry.Gather()
 	snap := gm.Snapshot()
 
