@@ -1,4 +1,4 @@
-name: Build and test
+name: test
 on:
   push:
     branches:
@@ -12,7 +12,7 @@ on:
       - 'go.sum'
 jobs:
   build_and_test:
-    name: Build and test on ubuntu-linux
+    name: test on ubuntu-linux
     runs-on: ubuntu-latest
     steps:
 
